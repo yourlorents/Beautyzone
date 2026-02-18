@@ -1,0 +1,12 @@
+.form-confidentiality {
+  max-width: 220px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-secondary-gray);
+
+  &__link {
+    color: var(--color-secondary-gray);
+  }
+}

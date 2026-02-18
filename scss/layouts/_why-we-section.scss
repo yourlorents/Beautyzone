@@ -1,0 +1,13 @@
+.why-we-section {
+  &__title {
+    max-width: 440px;
+    margin: 0 auto 48px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 56px;
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+}

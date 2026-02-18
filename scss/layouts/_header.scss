@@ -1,0 +1,67 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 106px;
+    width: 100%;
+    gap: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 56px;
+    flex-grow: 1;
+    justify-content: center;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 32px;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--color-primary-dark);
+    transition: fill 0.3s;
+  }
+
+  &__icon:hover {
+    fill: var(--color-brand);
+  }
+
+  &__burger {
+    display: none;
+    background-color: transparent;
+    fill: var(--color-primary-light);
+    border: none;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: block;
+    }
+  }
+}
