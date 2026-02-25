@@ -6,50 +6,50 @@
   background-position: center;
   padding: 56px 0;
   position: relative;
-}
 
-.confidentiality-footer {
-  font-size: 13px;
-  color: var(--color-secondary-gray);
-}
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
 
-.footer-container {
-  display: flex;
-  gap: 20px;
-}
+  &__nav,
+  &__address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+  }
 
-.footer-nav,
-.footer-address {
-  display: flex;
-  flex-basis: 50%;
-  gap: 20px;
-}
+  &__icon {
+    width: 42px;
+    height: 42px;
+    fill: var(--color-primary-light);
+    transition: fill 0.3s;
 
-.footer-logo,
-.footer-menu,
-.address-list,
-.address-info {
-  flex-grow: 1;
-}
+    &:hover {
+      fill: var(--color-brand);
+    }
+  }
 
-.icon-footer {
-  width: 42px;
-  height: 42px;
-  fill: var(--color-primary-light);
-  transition: fill 0.3s;
-}
+  &__logo,
+  &__menu,
+  &__address,
+  &__address {
+    flex-grow: 1;
+  }
 
-.icon-footer:hover {
-  fill: var(--color-brand);
-}
+  &__confidentiality {
+    font-size: 13px;
+    color: var(--color-secondary-gray);
+  }
 
-.footer::after {
-  content: '';
-  background-image: url('../images/footer-bottle-decor.png');
-  width: 278px;
-  height: 213px;
-  position: absolute;
-  background-repeat: no-repeat;
-  bottom: 0;
-  right: 0;
+  &::after {
+    content: '';
+    background-image: url('../images/footer-bottle-decor.png');
+    width: 278px;
+    height: 213px;
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+  }
 }

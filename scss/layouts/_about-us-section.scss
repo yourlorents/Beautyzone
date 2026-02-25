@@ -1,6 +1,10 @@
 .about-us-section {
-  padding-bottom: 128px;
+  padding-bottom: 104px;
   /* padding-top: 0; */
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 128px;
+  }
 
   &__container {
     display: flex;
@@ -13,17 +17,27 @@
   }
 
   &__title {
-    margin-bottom: 40px;
     text-align: left;
-    max-width: 529px;
+    max-width: 264px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 529px;
+      margin-bottom: 40px;
+    }
   }
 
   &__text {
-    font-size: 22px;
-    line-height: 1.7;
+    font-size: 18px;
     text-align: left;
-    max-width: 709px;
-    margin-bottom: 40px;
+    max-width: 320px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+      line-height: 1.7;
+      max-width: 709px;
+      margin-bottom: 40px;
+    }
   }
 
   &__text:last-child {
@@ -31,10 +45,15 @@
   }
 
   &__photo {
-    position: relative;
-    width: 500px;
-    height: 695px;
-    flex-shrink: 0;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      position: relative;
+      width: 500px;
+      height: 695px;
+      flex-shrink: 0;
+    }
   }
 
   &__capitalize {

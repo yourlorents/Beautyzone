@@ -13,7 +13,11 @@
         <div class="header__container">
           <nav class="header__nav">
             <a href="./index.html">
-              <img src="./images/logo.svg" alt="логотип beauty zone" />
+              <img
+                class="header__logo"
+                src="./images/logo.svg"
+                alt="логотип beauty zone"
+              />
             </a>
             <ul class="header__menu">
               <li>
@@ -63,23 +67,31 @@
               </a>
             </li>
           </ul>
-          <button class="header__burger" type="button">
+          <button class="header__burger menu-btn-open" type="button">
             <svg width="24" height="24">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              close
+            </button>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
-        <div class="container">
-          <p>Косметологічна клініка</p>
+        <div class="hero-section__container container">
+          <p class="hero-section__padding__title">Косметологічна клініка</p>
           <h1 class="hero-section__title" lang="en">beauty zone</h1>
-          <button class="button modal-btn-open" type="button">
+          <button
+            class="hero-section__button button modal-btn-open"
+            type="button"
+          >
             Замовити дзвінок
           </button>
-          <p class="padding__title">
+          <p class="hero-section__padding">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </p>
         </div>
@@ -113,11 +125,19 @@
             <div class="about-us-section__photo">
               <img
                 class="woman-photo woman-photo__before"
+                srcset="
+                  ./images/woman-before-procedures.jpg    1x,
+                  ./images/woman-before-procedures@2x.jpg 2x
+                "
                 src="./images/woman-before-procedures.jpg"
                 alt="жінка до процедури"
               />
               <img
                 class="woman-photo woman-photo__after"
+                srcset="
+                  ./images/woman-after-procedures.jpg    1x,
+                  ./images/woman-after-procedures@2x.jpg 2x
+                "
                 src="./images/woman-after-procedures.jpg"
                 alt="жінка після процедури"
               />
@@ -238,7 +258,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts-section section" id="contacts-section">
+      <!-- <section class="contacts-section section" id="contacts-section">
         <div class="container">
           <h2 class="contacts-section__title title">
             Як нас <span class="accent">знайти</span>
@@ -317,90 +337,92 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
-        <div class="footer-container">
-          <nav class="footer-nav">
-            <div class="footer-logo">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <div class="footer__logo">
               <a href="#">
                 <img src="./images/logo.svg" alt="логотип beauty zone" />
               </a>
             </div>
-            <ul class="footer-menu">
+            <ul class="footer__menu">
               <li>
-                <a class="link-footer" href="#about-us-section">Про нас</a>
+                <a class="link__footer" href="#about-us-section">Про нас</a>
               </li>
-              <li><a class="link-footer" href="#why-we-section">Чому ми</a></li>
               <li>
-                <a class="link-footer" href="#our-procedures-section"
+                <a class="link__footer" href="#why-we-section">Чому ми</a>
+              </li>
+              <li>
+                <a class="link__footer" href="#our-procedures-section"
                   >Наші процедури</a
                 >
               </li>
               <li>
-                <a class="link-footer" href="#contacts-section">Контакти</a>
+                <a class="link__footer" href="#contacts-section">Контакти</a>
               </li>
             </ul>
           </nav>
-          <address class="footer-address">
-            <ul class="address-list">
+          <address class="footer__address">
+            <ul class="footer__list">
               <li>
-                <a class="link-footer" href="tel:+380960000007"
+                <a class="link__footer" href="tel:+380960000007"
                   >+ 38 (096) 000 00 07</a
                 >
               </li>
               <li>
-                <a class="link-footer" href="mailto:beautyzone@gmail.com"
+                <a class="link__footer" href="mailto:beautyzone@gmail.com"
                   >beautyzone@gmail.com</a
                 >
               </li>
               <li>
                 <a
-                  class="link-footer"
+                  class="link__footer"
                   href="https://maps.app.goo.gl/snhuPoBa85uSC6gG9"
                   target="_blank"
                   >Україна, м. Київ, вул. Тараса Шевченка 5</a
                 >
               </li>
               <li>
-                <a class="link-footer" href="tel:+380960000007">
-                  <svg class="icon-footer">
+                <a class="link__footer" href="tel:+380960000007">
+                  <svg class="footer__icon">
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a
-                  class="link-footer"
+                  class="link__footer"
                   href="https://www.facebook.com/login.php"
                   target="_blank"
                 >
-                  <svg class="icon-footer">
+                  <svg class="footer__icon">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a
-                  class="link-footer"
+                  class="link__footer"
                   href="https://www.instagram.com/"
                   target="_blank"
                 >
-                  <svg class="icon-footer">
+                  <svg class="footer__icon">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
             </ul>
-            <div class="address-info">
-              <a class="link-footer" href="#">Політика конфіденційності</a>
-              <p class="confidentiality-footer">&copy; 2022 Дані захищені</p>
+            <div class="footer__info">
+              <a class="link__footer" href="#">Політика конфіденційності</a>
+              <p class="footer__confidentiality">&copy; 2022 Дані захищені</p>
             </div>
           </address>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden">
       <div class="modal">
@@ -470,5 +492,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
