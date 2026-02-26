@@ -2,8 +2,8 @@
   position: relative;
   border-radius: 4px 120px 4px 120px;
   border: none;
-  height: 456px;
-  width: 344px;
+  height: 416px;
+  width: 320px;
   background-image: linear-gradient(
     180.05deg,
     rgba(1, 28, 68, 0) 48.53%,
@@ -11,12 +11,23 @@
     #011c44 101.39%
   );
 
+  @media screen and (min-width: $bp-desktop) {
+    height: 456px;
+    width: 344px;
+  }
+
   &__text {
     color: var(--color-primary-light);
     line-height: 1.2;
     font-weight: 400;
-    padding: 372px 77px 32px 115px;
+    padding: 344px 72px 24px 112px;
+    font-size: 20px;
     text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 372px 77px 32px 115px;
+      font-size: 22px;
+    }
   }
 
   &__image {

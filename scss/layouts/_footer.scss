@@ -9,15 +9,36 @@
 
   &__container {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+    }
   }
 
   &__nav,
   &__address {
+    text-align: center;
     display: flex;
-    flex-basis: 50%;
-    gap: 20px;
+    flex-direction: column;
+    gap: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      text-align: left;
+      flex-direction: row;
+      flex-basis: 50%;
+      gap: 20px;
+    }
   }
+
+  // &__address {
+  //   display: none;
+
+  //   @media screen and (min-width: $bp-desktop) {
+  //     display: flex;
+  //   }
+  // }
 
   &__icon {
     width: 42px;
@@ -43,13 +64,19 @@
   }
 
   &::after {
-    content: '';
-    background-image: url('../images/footer-bottle-decor.png');
-    width: 278px;
-    height: 213px;
-    position: absolute;
-    background-repeat: no-repeat;
-    bottom: 0;
-    right: 0;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      content: '';
+      background-image: url('../images/footer-bottle-decor.png');
+      width: 278px;
+      height: 150px;
+      position: absolute;
+      background-repeat: no-repeat;
+      bottom: 0;
+      right: 0;
+      padding: 0;
+    }
   }
 }

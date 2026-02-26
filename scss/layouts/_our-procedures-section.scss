@@ -1,17 +1,31 @@
 .our-procedures-section {
-  &__container {
+  &__slider {
     display: flex;
     gap: 32px;
     align-items: center;
   }
 
+  &__container {
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
   &__list {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
+    margin-bottom: 32px;
   }
 
   &__item {
-    width: 344px;
+    width: 320px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 344px;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
   }
 }

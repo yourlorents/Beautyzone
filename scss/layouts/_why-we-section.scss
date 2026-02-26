@@ -1,4 +1,8 @@
 .why-we-section {
+  &__container {
+    padding-bottom: 40px;
+  }
+
   &__title {
     max-width: 210px;
     margin: 0 auto 24px;
