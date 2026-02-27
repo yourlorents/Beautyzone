@@ -1,24 +1,24 @@
 .our-procedures-section {
   &__slider {
     display: flex;
-    gap: 32px;
+    justify-content: center;
     align-items: center;
+    gap: 32px;
   }
 
   &__container {
     overflow: hidden;
+    width: 100%;
     margin-bottom: 40px;
+    overflow: hidden;
   }
   &__list {
     margin-bottom: 32px;
   }
 
   &__item {
-    width: 320px;
-
-    @media screen and (min-width: $bp-tablet) {
-      width: 344px;
-    }
+    width: 100%;
+    margin: 0 auto;
   }
 
   &__button {
