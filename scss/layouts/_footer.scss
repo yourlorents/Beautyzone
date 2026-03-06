@@ -16,6 +16,13 @@
     }
   }
 
+  &__logo,
+  &__menu,
+  &__address,
+  &__address-contacts {
+    flex-grow: 1;
+  }
+
   &__nav,
   &__address {
     text-align: center;
@@ -53,11 +60,6 @@
     margin-top: 16px;
   }
 
-  &__info {
-    width: 100%;
-    justify-content: start;
-  }
-
   &__icon {
     width: 42px;
     height: 42px;
@@ -69,16 +71,15 @@
     }
   }
 
-  &__logo,
-  &__menu,
-  &__address,
-  &__address {
-    flex-grow: 1;
-  }
-
   &__confidentiality {
     font-size: 13px;
     color: var(--color-secondary-gray);
+  }
+
+  &__info {
+    @media screen and (min-width: $bp-desktop) {
+      margin-left: 186px;
+    }
   }
 
   &::after {

@@ -26,8 +26,8 @@
 
     @media screen and (min-width: $bp-tablet) {
       margin: auto;
-      width: 400px;
-      height: 400px;
+      width: 350px;
+      height: 430px;
       border-radius: 32px;
     }
 
@@ -49,7 +49,7 @@
     background-image: url(../images/modal-background.png);
     border-radius: 36px;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       max-width: 423px;
       max-height: 481px;
       padding: 48px 56px;
