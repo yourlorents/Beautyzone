@@ -1,0 +1,35 @@
+.link__header {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--color-brand);
+  }
+}
+
+.link__footer {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--color-brand);
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 16px;
+  }
+}
+
+.link__mobile-menu {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 14px;
+
+  &:hover {
+    color: var(--color-brand);
+  }
+}

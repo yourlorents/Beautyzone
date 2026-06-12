@@ -1,0 +1,101 @@
+.footer {
+  background-color: var(--color-primary-dark);
+  background-image: url('../images/footer-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 56px 0;
+  position: relative;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+    }
+  }
+
+  &__logo,
+  &__menu,
+  &__address,
+  &__address-contacts {
+    flex-grow: 1;
+  }
+
+  &__nav,
+  &__address {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      text-align: left;
+      flex-direction: row;
+      flex-basis: 50%;
+    }
+  }
+
+  &__menu,
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__list {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__contacts-icon {
+    margin-top: 16px;
+  }
+
+  &__icon {
+    width: 42px;
+    height: 42px;
+    fill: var(--color-primary-light);
+    transition: fill 0.3s;
+
+    &:hover {
+      fill: var(--color-brand);
+    }
+  }
+
+  &__confidentiality {
+    font-size: 13px;
+    color: var(--color-secondary-gray);
+  }
+
+  &__info {
+    @media screen and (min-width: $bp-desktop) {
+      margin-left: 186px;
+    }
+  }
+
+  &::after {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      content: '';
+      background-image: url('../images/footer-bottle-decor.png');
+      width: 278px;
+      height: 150px;
+      position: absolute;
+      background-repeat: no-repeat;
+      bottom: 0;
+      right: 0;
+      padding: 0;
+    }
+  }
+}

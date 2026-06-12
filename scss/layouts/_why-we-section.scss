@@ -1,0 +1,29 @@
+.why-we-section {
+  &__container {
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    max-width: 210px;
+    margin: 0 auto 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0 auto 48px;
+      max-width: 440px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 316px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 56px;
+      flex-direction: row;
+      max-width: 1060px;
+    }
+  }
+}
